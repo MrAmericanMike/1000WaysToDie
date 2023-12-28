@@ -1,4 +1,4 @@
-package top.mramericanmike.mfmt.configs;
+package top.mramericanmike.waystodie.configs;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -6,12 +6,12 @@ import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.config.ModConfigEvent;
-import top.mramericanmike.mfmt.utils.ModUtils;
+import top.mramericanmike.waystodie.utils.ModUtils;
 
 @Mod.EventBusSubscriber(modid = ModUtils.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModConfigs {
 
-	public static void register(){
+	public static void register() {
 		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, SPEC);
 	}
 
